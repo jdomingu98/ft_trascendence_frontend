@@ -7,28 +7,28 @@
 
 
 .form-control{
-    background-color: #13124F;
-    border-color: #ABD9D9;
+    background-color: var(--blue);
+    border-color: var(--blue-brighter);
     border-left: 0;
 
 }
 
 .form-control::placeholder{
-    color: #ffff;
+    color: var(--white);
     font-size: 1.2rem;
 }
 
 .form-control:focus{
-    background-color: #13124F;
+    background-color: var(--blue);
     box-shadow: none;
-    border-color: #ABD9D9;
+    border-color: var(--blue-brighter);
     font-size: 1.2rem;
-    color: #ffff;
+    color: var(--white);
 }
 
 .input-group-text{
-    background-color: #13124F;
-    border-color: #ABD9D9;
+    background-color: var(--blue);
+    border-color: var(--blue-brighter);
     border-right: 0;
     padding-right: 0;
 }

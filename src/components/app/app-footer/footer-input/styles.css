@@ -1,5 +1,5 @@
 .form-control{
-    background-color: #13124F;
+    background-color: var(--blue);
     border: none;
 }
 

@@ -1,5 +1,5 @@
 .card {
-    background-color: #13124F;
+    background-color: var(--blue);
     display: flex;
     flex-direction: column;
     align-items: center;

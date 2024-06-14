@@ -7,7 +7,7 @@
 .stat-number {
     font-size: 3.5rem;
     color: white; /* Color del texto principal */
-    -webkit-text-stroke: 2px black; /* Borde de 2px de grosor de color negro */
+    -webkit-text-stroke: 2px var(--black); /* Borde de 2px de grosor de color negro */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
@@ -20,21 +20,21 @@
     width: 130px;
     height: 130px; 
     border-radius: 50%;
-    border: 15px solid #8DDAB5;
+    border: 15px solid var(--green);
     color: var(--white);
     background-color: #000235; 
 }
 
 .red{
-    color: #DA8D8D;
+    color: var(--red);
 }
 
 .green{
-    color: #8DDAB5;
+    color: var(--green);
 }
 
 .blue{
-    color: #8DBEDA;
+    color: var(--blue-light);
 }
 
 .stat-big-number{
