@@ -23,7 +23,7 @@ class UserHash extends WebComponent
 {
 render() {
     return `
-        <div class="d-flex flex-column gap-3 justify-content-center h-25 margin-right" >
+        <div class="d-flex flex-column gap-3 justify-content-center align-items-center align-items-lg-start h-25 margin-right" >
             <div class="d-flex flex-row align-items-end gap-4 p-0">
                 <big-tittle bootstrap="truncate">Cmorales</big-tittle>
                 <big-tittle bootstrap="black">#42</big-tittle>

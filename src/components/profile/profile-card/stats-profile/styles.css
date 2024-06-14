@@ -4,6 +4,11 @@
     font-weight: bold;
     font-size: 1.6rem;
 }
+
+.b-stat-tittle{
+    font-size: 3rem;
+}
+
 .stat-number {
     font-size: 3.5rem;
     color: white; /* Color del texto principal */
@@ -40,4 +45,77 @@
 .stat-big-number{
     margin-top: 1.5rem;
     font-size: 5rem;
+}
+
+
+
+@media (min-width: 276px) {
+    .stat-tittle{
+        font-size: 0.9rem;
+    }
+
+    .b-stat-tittle{
+        font-size: 1.1rem;
+        min-width: 200px;
+    }
+
+    .stat-number{
+        font-size: 2rem;
+    }
+
+    .stat-number-circle{
+        width: 80px;
+        height: 80px; 
+        
+        border: 8px solid var(--green);
+    }
+
+    .stat-big-number{
+        font-size: 3rem;
+    }
+}
+
+
+@media (min-width: 568px) {
+    .stat-tittle{
+        font-size: 1.3rem;
+    }
+    .b-stat-tittle{
+        font-size: 1.5rem;
+        min-width: 200px;
+    }
+    .stat-number{
+        font-size: 3rem;
+    }
+    .stat-big-number{
+        font-size: 4rem;
+    }
+    .stat-number-circle{
+        width: 110px;
+        height: 110px; 
+        
+        border: 12px solid var(--green);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .stat-tittle{
+        font-size: 1.6rem;
+    }
+    .b-stat-tittle{
+        font-size: 1.9rem;
+        min-width: 220px;
+    }
+    .stat-big-number{
+        font-size: 5rem;
+    }
+    .stat-number{
+        font-size: 4rem;
+    }
+    .stat-number-circle{
+        width: 130px;
+        height: 130px; 
+        border: 15px solid var(--green);
+    }
 }

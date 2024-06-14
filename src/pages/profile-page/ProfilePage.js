@@ -82,17 +82,24 @@ export default Component({
 class ProfilePage extends WebComponent
 {
   render() {
+    const historyData = [
+      { result: "win", text: "Atrujill", text2: "329 pts", text3: "1min 30s", showHeaders: true },
+      { result: "lose", text: "Aruzafa", text2: "-87pts", text3: "5min" },
+      { result: "win", text: "Cmorales", text2: "1 pts", text3: "4min 10s" },
+      { result: "lose", text: "Jdomingu", text2: "-87pts", text3: "5min" },
+    ];
 
     return `
     <div class="container-fluid profile">
         <div class="row">
-            <div class="col-2 d-flex flex-column align-items-center justify-content-start" style="background-color: #13124F;">
+            <div class="col-2 d-flex flex-column align-items-center justify-content-start" style="background-color: #13124F; height:210vh">
                 <lateral-nav></lateral-nav>
             </div>
             <div class="col-10">
                 <div class="container"">
                     <profile-search></profile-search>
                     <profile-card></profile-card>
+                    <history-card data-history='${JSON.stringify(historyData)}'></history-card>
                 </div>
             </div>
         </div>

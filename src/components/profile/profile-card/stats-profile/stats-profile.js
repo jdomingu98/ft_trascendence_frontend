@@ -25,15 +25,15 @@ class StatsProfile extends WebComponent
         return `
             <div class="row d-flex  justify-content-center align-items-start">
                 <div class="col-4 d-flex flex-column align-items-center text-center">
-                    <span class="${circleNum ? 'stat-tittle fs-2' : 'stat-tittle'}">${tittle}</span>
+                    <span class="${circleNum ? 'stat-tittle b-stat-tittle' : 'stat-tittle'}">${tittle}</span>
                     <span class="stat-number ${circleNum ? 'stat-number-circle' : 'green'}">${num}</span>
                 </div>
                 <div class="col-4 d-flex flex-column align-items-center text-center">
-                    <span class="${circleNum ? 'stat-tittle fs-2' : 'stat-tittle'}">${tittle2}</span>
+                    <span class="${circleNum ? 'stat-tittle b-stat-tittle' : 'stat-tittle'}">${tittle2}</span>
                     <span class="stat-number ${circleNum ? 'stat-number-circle' : 'red'}">${num2}</span>
                 </div>
                 <div class="col-4 d-flex flex-column align-items-center text-center">
-                    <span class="${circleNum ? 'stat-tittle fs-2' : 'stat-tittle'}">${tittle3}</span>
+                    <span class="${circleNum ? 'stat-tittle b-stat-tittle' : 'stat-tittle'}">${tittle3}</span>
                     <span class="stat-number ${bigNum ? 'stat-big-number' : 'blue'}">${num3}</span>
                 </div>
             </div>

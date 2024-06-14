@@ -15,6 +15,16 @@ class HistoryPage extends WebComponent
 {
   render() {
 
+    const historyData = [
+      { result: "win", text: "Atrujill", text2: "329 pts", text3: "1min 30s", showHeaders: true },
+      { result: "lose", text: "Aruzafa", text2: "-87pts", text3: "5min" },
+      { result: "win", text: "Cmorales", text2: "1 pts", text3: "4min 10s" },
+      { result: "lose", text: "Jdomingu", text2: "-87pts", text3: "5min" },
+      { result: "win", text: "Arojas", text2: "39 pts", text3: "3min 32s" },
+      { result: "lose", text: "Prodriguez", text2: "-7pts", text3: "5min" },
+      { result: "win", text: "Dgomez", text2: "2oo pts", text3: "3min 30s" }
+  ];
+
     return `
     <div class="container-fluid history">
         <div class="row">
@@ -23,7 +33,7 @@ class HistoryPage extends WebComponent
             </div>
             <div class="col-10">
                 <div class="container"">
-                    <history-card></history-card>
+                    <history-card data-history='${JSON.stringify(historyData)}'></history-card>
                     <history-btn></history-btn>
                 </div>
             </div>

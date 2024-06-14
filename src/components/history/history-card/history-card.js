@@ -9,7 +9,7 @@ export default Component({
     tagName: "history-card",
     styleCSS:`
         .card{
-            margin-top: 6rem;
+            margin-top: 5rem;
             background-color: var(--blue);
         }
     `
@@ -17,16 +17,7 @@ export default Component({
 class HistoryCard extends WebComponent {
     render() {
         let rowsHtml = '';
-        
-        const historyData = [
-            { result: "win", text: "Atrujill", text2: "329 pts", text3: "1min 30s", showHeaders: true },
-            { result: "lose", text: "Aruzafa", text2: "-87pts", text3: "5min" },
-            { result: "win", text: "Cmorales", text2: "1 pts", text3: "4min 10s" },
-            { result: "lose", text: "Jdomingu", text2: "-87pts", text3: "5min" },
-            { result: "win", text: "Arojas", text2: "39 pts", text3: "3min 32s" },
-            { result: "lose", text: "Prodriguez", text2: "-7pts", text3: "5min" },
-            { result: "win", text: "Dgomez", text2: "2oo pts", text3: "3min 30s" }
-        ];
+        const historyData = JSON.parse(this.getAttribute('data-history'));
 
         historyData.forEach(row =>  {
             rowsHtml += `
@@ -41,7 +32,7 @@ class HistoryCard extends WebComponent {
         })
 
         return `
-            <div class="card pb-4">
+            <div class=" card pb-4">
                 ${rowsHtml}
             </div>
         `
