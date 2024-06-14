@@ -1,3 +1,9 @@
 :host{
   --white:#ffffff;
+  --green:#8DDAB5;
+  --blue-light:#8DBEDA;
+  --blue-brighter: #ABD9D9;
+  --blue:#13124F;
+  --red:#DA8D8D;
+  --black: #000000;
 }
