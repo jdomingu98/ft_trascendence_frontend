@@ -1,0 +1,5 @@
+.bg-card{
+    background: var(--app-landing-footer-gradient);
+    border-radius: 30px; 
+    height: 30rem;
+}
