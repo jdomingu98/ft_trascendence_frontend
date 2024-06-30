@@ -12,7 +12,7 @@ export default Component({
             aspect-ratio: 1 / 1; /* Mantiene una proporción de 1:1 para asegurar que sea un círculo */
             min-width: 150px;
             max-width: 250px;
-            border-radius: 50%;
+            /*border-radius: 50%;*/
             overflow: hidden;
         }
         
@@ -22,14 +22,26 @@ export default Component({
             border-radius: 50%;
             object-fit: cover;
         }
+        .small-circle {
+            position: absolute;
+            top: 3vh;
+            right: 1%;
+            z-index: 1;
+            width: 17%;
+            aspect-ratio: 1 / 1; /* Mantiene una proporción de 1:1 para asegurar que sea un círculo */
+            background-color: var(--green);
+            border-radius: 50%;
+        }
+        
     `
 },
 class CircleProfile extends WebComponent
 {
-render() {
-    return `
+    render() {
+        return `
         <div class="perfil">
-            <img src="https://via.placeholder.com/120" class="img-perfil" alt="Perfil">
+            <span class="small-circle text-light"></span>
+            <img src="/src/img/people/cmorales.jpg" class="img-perfil" alt="Perfil">
         </div>
     `
 }
